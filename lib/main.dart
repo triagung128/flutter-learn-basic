@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/latihan_widget_dasar/soal_24.dart';
+import 'package:learn_flutter/belajar_navigation/halaman_pertama.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Soal24(),
+      home: HalamanPertama(),
     );
   }
 }
