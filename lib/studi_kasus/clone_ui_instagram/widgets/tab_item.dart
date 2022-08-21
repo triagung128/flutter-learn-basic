@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+
+class TabItem extends StatelessWidget {
+  const TabItem({
+    Key? key,
+    required this.active,
+    required this.icon,
+  }) : super(key: key);
+
+  final bool active;
+  final IconData icon;
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          border: Border(
+            bottom: BorderSide(
+              width: 1,
+              color: active ? Colors.black : Colors.white,
+            ),
+          ),
+        ),
+        child: Icon(icon),
+      ),
+    );
+  }
+}
