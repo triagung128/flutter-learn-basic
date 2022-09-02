@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './belajar_animation/materi_fade_transition/materi_fade_transition.dart';
+import './belajar_package/package_carousel_slider/package_carousel_slider.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,9 +8,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MateriFadeTransition(),
+      home: PackageCarouselSlider(),
     );
   }
 }
